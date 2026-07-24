@@ -3,6 +3,7 @@ USE IPL_Database;
 show tables;
 describe matches;
 describe deliveries;
+
 SELECT season, venue, COUNT(*) AS "Number of Seasons"
 FROM matches
 GROUP BY season,venue
@@ -21,3 +22,11 @@ select batsman_runs from deliveries
 where batsman_runs between 1 and 3 limit 10;
 
 select batsman_runs from deliveries;
+
+SELECT *
+FROM matches
+WHERE city = 'Mumbai';
+
+SELECT winner, COUNT(*) AS total_wins
+FROM matches
+GROUP BY winner;
