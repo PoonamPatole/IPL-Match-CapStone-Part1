@@ -1,3 +1,13 @@
+IPL Data Cleaning, SQL & Data Visualization (Part 1)
+
+Dataset:
+Two datasets were used:
+    matches.csv
+    deliveries.csv
+After cleaning, the following files were created:
+    matches_cleaned.csv
+    deliveries_cleaned.csv
+
 1. Loaded matches.csv CSV file's Shape is (1095, 20)
 2. Total Data columns (total 20 columns)
 3. Missing Value Columns are :-
@@ -38,6 +48,15 @@ The best numeric columns to check are:
 1. ALl SQL queries is Performed. SELECT, GROUPBY, ORDERBY, HAVING, BETWEEN
 2. After that we Visualse all dataset in different types of Charts. Like.. Bar, Histogram, Scatter_Plot, Line and GroupBy Line chart.
 
+Data Visualizations: 
+The following visualizations were created using Matplotlib and Seaborn:
+    .Box Plot of Target Runs
+    .Histogram of Batsman Runs
+    .Bar Chart of Winning Teams
+    .Group by Line of Number of matches played in season
+    .Line Chart of Matches Played Per Season
+Each visualization includes appropriate titles and axis labels.
+
 Libraries used....
 pandas
 numpy
@@ -46,3 +65,15 @@ mysql-connector-python
 SQLAlchemy
 PyMySQL
 python-dotenv
+
+How to Run:.....
+Install the required libraries.
+pip install -r requirements.txt
+Configure the MySQL connection.
+Run the data cleaning script.
+python data_cleaning.py
+Load the cleaned data into MySQL.
+python load.py
+Execute SQL queries.
+Run the visualization script.
+python visualization.py
