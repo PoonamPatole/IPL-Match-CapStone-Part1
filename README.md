@@ -1,23 +1,25 @@
-IPL Data Cleaning, SQL & Data Visualization (Part 1)
 
-Dataset:
+# IPL Data Cleaning, SQL & Data Visualization
+
+## Dataset:
+
 Two datasets were used:
-    matches.csv
-    deliveries.csv
+- matches.csv
+- deliveries.csv
 After cleaning, the following files were created:
-    matches_cleaned.csv
-    deliveries_cleaned.csv
+- matches_cleaned.csv
+- deliveries_cleaned.csv
 
 1. Loaded matches.csv CSV file's Shape is (1095, 20)
 2. Total Data columns (total 20 columns)
 3. Missing Value Columns are :-
-city,
-player_Of_match,
-winner,
-result_margin,
-target_runs,
-target_overs,
-method
+    - city,
+    - player_Of_match,
+    - winner,
+    - result_margin,
+    - target_runs,
+    - target_overs,
+    - method
 4. Drop Column = method. because it has so many null values.and it contain no useful information.
 5. Categorical columns imputed with mode: city, player_of_match, winner
 6. Numeric columns imputed with median: result_margin, target_runs, target_overs
@@ -48,16 +50,21 @@ The best numeric columns to check are:
 1. ALl SQL queries is Performed. SELECT, GROUPBY, ORDERBY, HAVING, BETWEEN
 2. After that we Visualse all dataset in different types of Charts. Like.. Bar, Histogram, Scatter_Plot, Line and GroupBy Line chart.
 
-Data Visualizations: 
+
+
+# Data Visualizations: 
+
 The following visualizations were created using Matplotlib and Seaborn:
-    .Box Plot of Target Runs
-    .Histogram of Batsman Runs
-    .Bar Chart of Winning Teams
-    .Group by Line of Number of matches played in season
-    .Line Chart of Matches Played Per Season
+    - Box Plot of Target Runs
+    - Histogram of Batsman Runs
+    - Bar Chart of Winning Teams
+    - Group by Line of Number of matches played in season
+    - Line Chart of Matches Played Per Season
 Each visualization includes appropriate titles and axis labels.
 
-Libraries used....
+
+# Libraries used....
+
 pandas
 numpy
 matplotlib
@@ -66,7 +73,10 @@ SQLAlchemy
 PyMySQL
 python-dotenv
 
-How to Run:.....
+
+
+# How to Run:.....
+
 Install the required libraries.
 pip install -r requirements.txt
 Configure the MySQL connection.
